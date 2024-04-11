@@ -117,7 +117,7 @@ public class EmailTest {
 		email.buildMimeMessage();
 			
 	}
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testBuildMimeMessageAlreadyBuilt() throws Exception {
 		
 		email.setCharset("UTF-16");
@@ -141,7 +141,7 @@ public class EmailTest {
 		email.buildMimeMessage();
 		email.buildMimeMessage();
 	}
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testBuildMimeMessageException() throws Exception {
 		
 		email.setCharset("UTF-16");
@@ -177,7 +177,7 @@ public class EmailTest {
 		
 	}
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testGetMailSession() throws Exception {
 		 
 		email.setCharset("UTF-16");

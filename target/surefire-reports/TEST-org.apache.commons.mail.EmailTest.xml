@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="org.apache.commons.mail.EmailTest" time="0.091" tests="14" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src\target\test-classes;C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src\target\classes;C:\Users\luisg\.m2\repository\javax\mail\mail\1.4.5\mail-1.4.5.jar;C:\Users\luisg\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\luisg\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\luisg\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\luisg\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\luisg\.m2\repository\org\subethamail\subethasmtp\3.1.7\subethasmtp-3.1.7.jar;C:\Users\luisg\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\luisg\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-module-junit4\1.4.12\powermock-module-junit4-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-module-junit4-common\1.4.12\powermock-module-junit4-common-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-core\1.4.12\powermock-core-1.4.12.jar;C:\Users\luisg\.m2\repository\org\javassist\javassist\3.16.1-GA\javassist-3.16.1-GA.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-reflect\1.4.12\powermock-reflect-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-api-easymock\1.4.12\powermock-api-easymock-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-api-support\1.4.12\powermock-api-support-1.4.12.jar;C:\Users\luisg\.m2\repository\org\easymock\easymock\3.1\easymock-3.1.jar;C:\Users\luisg\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar;C:\Users\luisg\.m2\repository\org\objenesis\objenesis\1.2\objenesis-1.2.jar;C:\Users\luisg\.m2\repository\org\slf4j\slf4j-jdk14\1.6.1\slf4j-jdk14-1.6.1.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+    <property name="sun.java.command" value="C:\Users\luisg\AppData\Local\Temp\surefire17603876993994277085\surefirebooter-20240410224810210_3.jar C:\Users\luisg\AppData\Local\Temp\surefire17603876993994277085 2024-04-10T22-48-09_966-jvmRun1 surefire-20240410224810210_1tmp surefire_0-20240410224810210_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src\target\test-classes;C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src\target\classes;C:\Users\luisg\.m2\repository\javax\mail\mail\1.4.5\mail-1.4.5.jar;C:\Users\luisg\.m2\repository\javax\activation\activation\1.1.1\activation-1.1.1.jar;C:\Users\luisg\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\luisg\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\luisg\.m2\repository\commons-io\commons-io\2.2\commons-io-2.2.jar;C:\Users\luisg\.m2\repository\org\subethamail\subethasmtp\3.1.7\subethasmtp-3.1.7.jar;C:\Users\luisg\.m2\repository\org\slf4j\slf4j-api\1.6.1\slf4j-api-1.6.1.jar;C:\Users\luisg\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-module-junit4\1.4.12\powermock-module-junit4-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-module-junit4-common\1.4.12\powermock-module-junit4-common-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-core\1.4.12\powermock-core-1.4.12.jar;C:\Users\luisg\.m2\repository\org\javassist\javassist\3.16.1-GA\javassist-3.16.1-GA.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-reflect\1.4.12\powermock-reflect-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-api-easymock\1.4.12\powermock-api-easymock-1.4.12.jar;C:\Users\luisg\.m2\repository\org\powermock\powermock-api-support\1.4.12\powermock-api-support-1.4.12.jar;C:\Users\luisg\.m2\repository\org\easymock\easymock\3.1\easymock-3.1.jar;C:\Users\luisg\.m2\repository\cglib\cglib-nodep\2.2.2\cglib-nodep-2.2.2.jar;C:\Users\luisg\.m2\repository\org\objenesis\objenesis\1.2\objenesis-1.2.jar;C:\Users\luisg\.m2\repository\org\slf4j\slf4j-jdk14\1.6.1\slf4j-jdk14-1.6.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\luisg"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+    <property name="file.separator" value="\"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\luisg\AppData\Local\Temp\surefire17603876993994277085\surefirebooter-20240410224810210_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="11.0.22+9-LTS-219"/>
+    <property name="user.name" value="luisg"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="C:\Users\luisg\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\luisg\AppData\Local\Temp\"/>
+    <property name="java.version" value="11.0.22"/>
+    <property name="user.dir" value="C:\Users\luisg\Downloads\commons-email-1.3.2-src\commons-email-1.3.2-src"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:/Users/luisg/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin/server;C:/Users/luisg/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.10.v20240120-1143/jre/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\MATLAB\R2021b\bin;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\luisg\Downloads\mongodb-database-tools-windows-x86_64-100.9.4\mongodb-database-tools-windows-x86_64-100.9.4\bin;C:\Users\luisg\AppData\Local\Microsoft\WindowsApps;C:\Users\luisg\.dotnet\tools;C:\Users\luisg\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\luisg\AppData\Roaming\npm;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Users\luisg\eclipse\java-2024-03\eclipse;;."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.22+9-LTS-219"/>
+    <property name="java.specification.maintenance.version" value="2"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="55.0"/>
+  </properties>
+  <testcase name="testGetSentDate" classname="org.apache.commons.mail.EmailTest" time="0.016"/>
+  <testcase name="testAddcc" classname="org.apache.commons.mail.EmailTest" time="0.001"/>
+  <testcase name="testAddHeaderNameEmpty" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testAddHeaderNumEmpty" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetHostNameWithHostNameNull" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetMailSession" classname="org.apache.commons.mail.EmailTest" time="0.003">
+    <error message="Cannot find valid hostname for mail session" type="org.apache.commons.mail.EmailException"><![CDATA[org.apache.commons.mail.EmailException: Cannot find valid hostname for mail session
+	at org.apache.commons.mail.Email.getMailSession(Email.java:639)
+	at org.apache.commons.mail.EmailTest.testGetMailSession(EmailTest.java:198)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="testAddHeader" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testBuildMimeMessageException" classname="org.apache.commons.mail.EmailTest" time="0.025">
+    <error message="From address required" type="org.apache.commons.mail.EmailException"><![CDATA[org.apache.commons.mail.EmailException: From address required
+	at org.apache.commons.mail.Email.buildMimeMessage(Email.java:1323)
+	at org.apache.commons.mail.EmailTest.testBuildMimeMessageException(EmailTest.java:161)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="testBuildMimeMessage" classname="org.apache.commons.mail.EmailTest" time="0.005"/>
+  <testcase name="testAddBcc" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testSetSocketConnectionTimeout" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testBuildMimeMessageAlreadyBuilt" classname="org.apache.commons.mail.EmailTest" time="0.002">
+    <error message="The MimeMessage is already built." type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: The MimeMessage is already built.
+	at org.apache.commons.mail.Email.buildMimeMessage(Email.java:1263)
+	at org.apache.commons.mail.EmailTest.testBuildMimeMessageAlreadyBuilt(EmailTest.java:142)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></error>
+  </testcase>
+  <testcase name="testSetFrom" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+  <testcase name="testGetHostNameWithHostName" classname="org.apache.commons.mail.EmailTest" time="0.0"/>
+</testsuite>
