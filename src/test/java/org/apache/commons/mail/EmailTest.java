@@ -82,12 +82,12 @@ public class EmailTest {
 		
 		email.addHeader(validName, validNum);
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = EmailException.class)
 	public void testAddHeaderNameEmpty() throws Exception {
 		
 		email.addHeader(emptyName, "emptyNum");
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = EmailException.class)
 	public void testAddHeaderNumEmpty() throws Exception {
 		
 		email.addHeader("emptyName", emptyNum);
@@ -117,7 +117,7 @@ public class EmailTest {
 		email.buildMimeMessage();
 			
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = EmailException.class)
 	public void testBuildMimeMessageAlreadyBuilt() throws Exception {
 		
 		email.setCharset("UTF-16");
@@ -141,7 +141,7 @@ public class EmailTest {
 		email.buildMimeMessage();
 		email.buildMimeMessage();
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = EmailException.class)
 	public void testBuildMimeMessageException() throws Exception {
 		
 		email.setCharset("UTF-16");
@@ -177,7 +177,7 @@ public class EmailTest {
 		
 	}
 	
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = EmailException.class)
 	public void testGetMailSession() throws Exception {
 		 
 		email.setCharset("UTF-16");
