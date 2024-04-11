@@ -117,7 +117,7 @@ public class EmailTest {
 		email.buildMimeMessage();
 			
 	}
-	@Test(expected = IllegalArgumentException.class)
+	@Test(expected = IllegalStateException.class)
 	public void testBuildMimeMessageAlreadyBuilt() throws Exception {
 		
 		email.setCharset("UTF-16");
